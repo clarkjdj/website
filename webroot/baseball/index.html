@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historic Baseball Database</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css">
+    <link rel="stylesheet" href="baseball.css">
+    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic|Roboto:100,300" rel="stylesheet">
+</head>
+<body>
+    <div class="container-fluid">
+        <!-- Header -->
+        <header class="baseball-header">
+            <div class="row center-xs">
+                <div class="col-xs-12">
+                    <h1 class="title">Historic Baseball Database</h1>
+                    <p class="subtitle">Explore the Greatest Players in Baseball History</p>
+                </div>
+            </div>
+        </header>
+
+        <!-- Control Panel -->
+        <section class="control-panel">
+            <div class="row center-xs">
+                <div class="col-xs-12 col-md-10">
+                    <div class="controls-container">
+                        <h2 class="controls-title">Filters & Controls</h2>
+
+                        <!-- Year Range Slider -->
+                        <div class="control-group">
+                            <label class="control-label">
+                                <span class="label-icon">📅</span>
+                                Career Years
+                                <span class="value-display" id="yearDisplay">1900 - 2024</span>
+                            </label>
+                            <div class="dual-slider-container">
+                                <input type="range" id="yearMin" class="slider" min="1900" max="2024" value="1900" step="1">
+                                <input type="range" id="yearMax" class="slider" min="1900" max="2024" value="2024" step="1">
+                            </div>
+                        </div>
+
+                        <!-- Batting Average Slider -->
+                        <div class="control-group">
+                            <label class="control-label">
+                                <span class="label-icon">🎯</span>
+                                Minimum Batting Average
+                                <span class="value-display" id="avgDisplay">.250</span>
+                            </label>
+                            <input type="range" id="avgSlider" class="slider" min="250" max="400" value="250" step="1">
+                        </div>
+
+                        <!-- Home Runs Slider -->
+                        <div class="control-group">
+                            <label class="control-label">
+                                <span class="label-icon">⚾</span>
+                                Minimum Home Runs
+                                <span class="value-display" id="hrDisplay">0</span>
+                            </label>
+                            <input type="range" id="hrSlider" class="slider" min="0" max="800" value="0" step="10">
+                        </div>
+
+                        <!-- WAR Dial -->
+                        <div class="control-group dial-group">
+                            <label class="control-label">
+                                <span class="label-icon">⭐</span>
+                                Minimum WAR (Wins Above Replacement)
+                                <span class="value-display" id="warDisplay">0.0</span>
+                            </label>
+                            <div class="dial-container">
+                                <svg class="dial-svg" id="warDial" viewBox="0 0 200 200">
+                                    <circle cx="100" cy="100" r="80" class="dial-track"></circle>
+                                    <circle cx="100" cy="100" r="80" class="dial-progress" id="warProgress"></circle>
+                                    <circle cx="100" cy="20" r="12" class="dial-handle" id="warHandle"></circle>
+                                    <text x="100" y="105" class="dial-value" id="warValue">0</text>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <!-- Era Filter -->
+                        <div class="control-group">
+                            <label class="control-label">
+                                <span class="label-icon">🏛️</span>
+                                Baseball Era
+                            </label>
+                            <select id="eraFilter" class="era-select">
+                                <option value="all">All Eras</option>
+                                <option value="Dead-ball">Dead-ball Era (1900-1919)</option>
+                                <option value="Live-ball">Live-ball Era (1920-1941)</option>
+                                <option value="Integration">Integration Era (1947-1968)</option>
+                                <option value="Expansion">Expansion Era (1969-1992)</option>
+                                <option value="Steroid">Steroid Era (1993-2005)</option>
+                                <option value="Modern">Modern Era (2006-2024)</option>
+                            </select>
+                        </div>
+
+                        <!-- Sort Options -->
+                        <div class="control-group">
+                            <label class="control-label">
+                                <span class="label-icon">🔄</span>
+                                Sort By
+                            </label>
+                            <div class="sort-buttons">
+                                <button class="sort-btn active" data-sort="name">Name</button>
+                                <button class="sort-btn" data-sort="avg">Avg</button>
+                                <button class="sort-btn" data-sort="hr">HR</button>
+                                <button class="sort-btn" data-sort="hits">Hits</button>
+                                <button class="sort-btn" data-sort="war">WAR</button>
+                            </div>
+                        </div>
+
+                        <!-- Reset Button -->
+                        <div class="control-group">
+                            <button id="resetBtn" class="reset-btn">Reset All Filters</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Overview -->
+        <section class="stats-overview">
+            <div class="row center-xs">
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="stat-card">
+                        <div class="stat-number" id="totalPlayers">20</div>
+                        <div class="stat-label">Players Shown</div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="stat-card">
+                        <div class="stat-number" id="avgBA">.315</div>
+                        <div class="stat-label">Avg Batting Avg</div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="stat-card">
+                        <div class="stat-number" id="totalHR">8,246</div>
+                        <div class="stat-label">Total Home Runs</div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="stat-card">
+                        <div class="stat-number" id="avgWAR">105.4</div>
+                        <div class="stat-label">Avg WAR</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Players Grid -->
+        <section class="players-section">
+            <div class="row center-xs">
+                <div class="col-xs-12 col-md-11">
+                    <div id="playersGrid" class="players-grid">
+                        <!-- Players will be dynamically inserted here -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="baseball-footer">
+            <div class="row center-xs">
+                <div class="col-xs-12">
+                    <p>Historic Baseball Database &copy; 2026</p>
+                    <p class="footer-note">Statistics compiled from official MLB records and Baseball Reference</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="baseball.js"></script>
+</body>
+</html>

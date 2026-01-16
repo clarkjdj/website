@@ -1,0 +1,386 @@
+{
+  "players": [
+    {
+      "id": 1,
+      "name": "Babe Ruth",
+      "team": "New York Yankees",
+      "position": "OF",
+      "era": "Dead-ball/Live-ball",
+      "yearsActive": [1914, 1935],
+      "batting": {
+        "avg": 0.342,
+        "hr": 714,
+        "rbi": 2214,
+        "hits": 2873,
+        "runs": 2174,
+        "sb": 123
+      },
+      "achievements": ["7x World Series Champion", "AL MVP (1923)", "12x AL Home Run Leader"],
+      "warp": 183.1
+    },
+    {
+      "id": 2,
+      "name": "Ty Cobb",
+      "team": "Detroit Tigers",
+      "position": "OF",
+      "era": "Dead-ball",
+      "yearsActive": [1905, 1928],
+      "batting": {
+        "avg": 0.366,
+        "hr": 117,
+        "rbi": 1944,
+        "hits": 4189,
+        "runs": 2246,
+        "sb": 897
+      },
+      "achievements": ["3x AL MVP", "12x AL Batting Champion", "Hall of Fame (1936)"],
+      "warp": 151.2
+    },
+    {
+      "id": 3,
+      "name": "Willie Mays",
+      "team": "San Francisco Giants",
+      "position": "OF",
+      "era": "Integration",
+      "yearsActive": [1951, 1973],
+      "batting": {
+        "avg": 0.302,
+        "hr": 660,
+        "rbi": 1903,
+        "hits": 3283,
+        "runs": 2062,
+        "sb": 338
+      },
+      "achievements": ["2x NL MVP", "12x Gold Glove", "24x All-Star"],
+      "warp": 156.2
+    },
+    {
+      "id": 4,
+      "name": "Hank Aaron",
+      "team": "Atlanta Braves",
+      "position": "OF",
+      "era": "Integration",
+      "yearsActive": [1954, 1976],
+      "batting": {
+        "avg": 0.305,
+        "hr": 755,
+        "rbi": 2297,
+        "hits": 3771,
+        "runs": 2174,
+        "sb": 240
+      },
+      "achievements": ["NL MVP (1957)", "3x Gold Glove", "25x All-Star"],
+      "warp": 143.0
+    },
+    {
+      "id": 5,
+      "name": "Ted Williams",
+      "team": "Boston Red Sox",
+      "position": "OF",
+      "era": "Integration",
+      "yearsActive": [1939, 1960],
+      "batting": {
+        "avg": 0.344,
+        "hr": 521,
+        "rbi": 1839,
+        "hits": 2654,
+        "runs": 1798,
+        "sb": 24
+      },
+      "achievements": ["2x AL MVP", "6x AL Batting Champion", "Last .400 hitter (.406 in 1941)"],
+      "warp": 123.3
+    },
+    {
+      "id": 6,
+      "name": "Jackie Robinson",
+      "team": "Brooklyn Dodgers",
+      "position": "2B",
+      "era": "Integration",
+      "yearsActive": [1947, 1956],
+      "batting": {
+        "avg": 0.311,
+        "hr": 137,
+        "rbi": 734,
+        "hits": 1518,
+        "runs": 947,
+        "sb": 197
+      },
+      "achievements": ["NL MVP (1949)", "6x All-Star", "Broke color barrier (1947)"],
+      "warp": 61.5
+    },
+    {
+      "id": 7,
+      "name": "Mickey Mantle",
+      "team": "New York Yankees",
+      "position": "OF",
+      "era": "Integration",
+      "yearsActive": [1951, 1968],
+      "batting": {
+        "avg": 0.298,
+        "hr": 536,
+        "rbi": 1509,
+        "hits": 2415,
+        "runs": 1676,
+        "sb": 153
+      },
+      "achievements": ["3x AL MVP", "7x World Series Champion", "20x All-Star"],
+      "warp": 110.3
+    },
+    {
+      "id": 8,
+      "name": "Barry Bonds",
+      "team": "San Francisco Giants",
+      "position": "OF",
+      "era": "Steroid",
+      "yearsActive": [1986, 2007],
+      "batting": {
+        "avg": 0.298,
+        "hr": 762,
+        "rbi": 1996,
+        "hits": 2935,
+        "runs": 2227,
+        "sb": 514
+      },
+      "achievements": ["7x NL MVP", "8x Gold Glove", "14x All-Star"],
+      "warp": 162.8
+    },
+    {
+      "id": 9,
+      "name": "Ken Griffey Jr.",
+      "team": "Seattle Mariners",
+      "position": "OF",
+      "era": "Steroid",
+      "yearsActive": [1989, 2010],
+      "batting": {
+        "avg": 0.284,
+        "hr": 630,
+        "rbi": 1836,
+        "hits": 2781,
+        "runs": 1662,
+        "sb": 184
+      },
+      "achievements": ["AL MVP (1997)", "10x Gold Glove", "13x All-Star"],
+      "warp": 83.8
+    },
+    {
+      "id": 10,
+      "name": "Cal Ripken Jr.",
+      "team": "Baltimore Orioles",
+      "position": "SS",
+      "era": "Modern",
+      "yearsActive": [1981, 2001],
+      "batting": {
+        "avg": 0.276,
+        "hr": 431,
+        "rbi": 1695,
+        "hits": 3184,
+        "runs": 1647,
+        "sb": 36
+      },
+      "achievements": ["2x AL MVP", "19x All-Star", "2,632 consecutive games"],
+      "warp": 95.9
+    },
+    {
+      "id": 11,
+      "name": "Stan Musial",
+      "team": "St. Louis Cardinals",
+      "position": "OF",
+      "era": "Integration",
+      "yearsActive": [1941, 1963],
+      "batting": {
+        "avg": 0.331,
+        "hr": 475,
+        "rbi": 1951,
+        "hits": 3630,
+        "runs": 1949,
+        "sb": 78
+      },
+      "achievements": ["3x NL MVP", "24x All-Star", "7x NL Batting Champion"],
+      "warp": 128.2
+    },
+    {
+      "id": 12,
+      "name": "Derek Jeter",
+      "team": "New York Yankees",
+      "position": "SS",
+      "era": "Modern",
+      "yearsActive": [1995, 2014],
+      "batting": {
+        "avg": 0.310,
+        "hr": 260,
+        "rbi": 1311,
+        "hits": 3465,
+        "runs": 1923,
+        "sb": 358
+      },
+      "achievements": ["5x World Series Champion", "14x All-Star", "5x Gold Glove"],
+      "warp": 72.4
+    },
+    {
+      "id": 13,
+      "name": "Albert Pujols",
+      "team": "St. Louis Cardinals",
+      "position": "1B",
+      "era": "Modern",
+      "yearsActive": [2001, 2022],
+      "batting": {
+        "avg": 0.296,
+        "hr": 703,
+        "rbi": 2218,
+        "hits": 3384,
+        "runs": 1914,
+        "sb": 117
+      },
+      "achievements": ["3x NL MVP", "11x All-Star", "2x Gold Glove"],
+      "warp": 100.6
+    },
+    {
+      "id": 14,
+      "name": "Rogers Hornsby",
+      "team": "St. Louis Cardinals",
+      "position": "2B",
+      "era": "Live-ball",
+      "yearsActive": [1915, 1937],
+      "batting": {
+        "avg": 0.358,
+        "hr": 301,
+        "rbi": 1584,
+        "hits": 2930,
+        "runs": 1579,
+        "sb": 135
+      },
+      "achievements": ["2x NL MVP", "7x NL Batting Champion", "Hall of Fame (1942)"],
+      "warp": 127.0
+    },
+    {
+      "id": 15,
+      "name": "Mike Trout",
+      "team": "Los Angeles Angels",
+      "position": "OF",
+      "era": "Modern",
+      "yearsActive": [2011, 2024],
+      "batting": {
+        "avg": 0.299,
+        "hr": 368,
+        "rbi": 923,
+        "hits": 1564,
+        "runs": 1003,
+        "sb": 201
+      },
+      "achievements": ["3x AL MVP", "11x All-Star", "AL Rookie of the Year"],
+      "warp": 85.4
+    },
+    {
+      "id": 16,
+      "name": "Honus Wagner",
+      "team": "Pittsburgh Pirates",
+      "position": "SS",
+      "era": "Dead-ball",
+      "yearsActive": [1897, 1917],
+      "batting": {
+        "avg": 0.328,
+        "hr": 101,
+        "rbi": 1732,
+        "hits": 3420,
+        "runs": 1736,
+        "sb": 723
+      },
+      "achievements": ["8x NL Batting Champion", "Hall of Fame (1936)", "T206 card legend"],
+      "warp": 130.8
+    },
+    {
+      "id": 17,
+      "name": "Lou Gehrig",
+      "team": "New York Yankees",
+      "position": "1B",
+      "era": "Live-ball",
+      "yearsActive": [1923, 1939],
+      "batting": {
+        "avg": 0.340,
+        "hr": 493,
+        "rbi": 1995,
+        "hits": 2721,
+        "runs": 1888,
+        "sb": 102
+      },
+      "achievements": ["2x AL MVP", "7x All-Star", "2,130 consecutive games"],
+      "warp": 112.4
+    },
+    {
+      "id": 18,
+      "name": "Joe DiMaggio",
+      "team": "New York Yankees",
+      "position": "OF",
+      "era": "Integration",
+      "yearsActive": [1936, 1951],
+      "batting": {
+        "avg": 0.325,
+        "hr": 361,
+        "rbi": 1537,
+        "hits": 2214,
+        "runs": 1390,
+        "sb": 30
+      },
+      "achievements": ["3x AL MVP", "56-game hitting streak", "9x World Series Champion"],
+      "warp": 79.2
+    },
+    {
+      "id": 19,
+      "name": "Roberto Clemente",
+      "team": "Pittsburgh Pirates",
+      "position": "OF",
+      "era": "Integration",
+      "yearsActive": [1955, 1972],
+      "batting": {
+        "avg": 0.317,
+        "hr": 240,
+        "rbi": 1305,
+        "hits": 3000,
+        "runs": 1416,
+        "sb": 83
+      },
+      "achievements": ["NL MVP (1966)", "12x Gold Glove", "15x All-Star"],
+      "warp": 94.5
+    },
+    {
+      "id": 20,
+      "name": "Pete Rose",
+      "team": "Cincinnati Reds",
+      "position": "OF/1B",
+      "era": "Modern",
+      "yearsActive": [1963, 1986],
+      "batting": {
+        "avg": 0.303,
+        "hr": 160,
+        "rbi": 1314,
+        "hits": 4256,
+        "runs": 2165,
+        "sb": 198
+      },
+      "achievements": ["3x NL Batting Champion", "17x All-Star", "All-time hits leader"],
+      "warp": 79.6
+    }
+  ],
+  "teams": [
+    {"name": "New York Yankees", "founded": 1901, "championships": 27, "league": "AL"},
+    {"name": "Boston Red Sox", "founded": 1901, "championships": 9, "league": "AL"},
+    {"name": "San Francisco Giants", "founded": 1883, "championships": 8, "league": "NL"},
+    {"name": "St. Louis Cardinals", "founded": 1882, "championships": 11, "league": "NL"},
+    {"name": "Detroit Tigers", "founded": 1901, "championships": 4, "league": "AL"},
+    {"name": "Atlanta Braves", "founded": 1871, "championships": 4, "league": "NL"},
+    {"name": "Brooklyn Dodgers", "founded": 1883, "championships": 6, "league": "NL"},
+    {"name": "Seattle Mariners", "founded": 1977, "championships": 0, "league": "AL"},
+    {"name": "Baltimore Orioles", "founded": 1901, "championships": 3, "league": "AL"},
+    {"name": "Los Angeles Angels", "founded": 1961, "championships": 1, "league": "AL"},
+    {"name": "Pittsburgh Pirates", "founded": 1882, "championships": 5, "league": "NL"},
+    {"name": "Cincinnati Reds", "founded": 1882, "championships": 5, "league": "NL"}
+  ],
+  "eras": [
+    {"name": "Dead-ball", "start": 1900, "end": 1919, "description": "Low-scoring era dominated by pitching and defense"},
+    {"name": "Live-ball", "start": 1920, "end": 1941, "description": "Introduction of livelier ball, rise of power hitting"},
+    {"name": "Integration", "start": 1947, "end": 1968, "description": "Breaking of color barrier, expansion of talent pool"},
+    {"name": "Expansion", "start": 1969, "end": 1992, "description": "League expansion, designated hitter, artificial turf"},
+    {"name": "Steroid", "start": 1993, "end": 2005, "description": "Era of inflated offensive numbers"},
+    {"name": "Modern", "start": 2006, "end": 2024, "description": "Analytics revolution, shift bans, pitcher injuries"}
+  ]
+}
